@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Mi blog</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3479/3479400.png">
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <?php echo '<h1>BIENVENIDO</h1>'; ?>
+
+    <h2>Sobre mí</h2>
+    <?php 
+    echo '<p>Mi nombre es Carla Monserrat Vazquez Magallanes, nací el 16 de junio de 2007 en Saltillo, Coahuila y actualmente estoy estudiando en la Universidad Tecnológica de Coahuila en Ramos Arizpe.</p>'; 
+    ?>
+
+    <h3>Esta soy yo</h3>
+    <img src="https://scontent.fslw1-1.fna.fbcdn.net/v/t39.30808-6/443819291_1880316842413442_9045144976925021072_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE01agbyi9UbUiO3jyeFFYuzw2CvkMN8gnPDYK-Qw3yCWKkpa2IGO7cSjWW3W0sQwbPjS7evXKVmDKPBaEHeMx3&_nc_ohc=FPiRMXNBmbQQ7kNvwGKovO2&_nc_oc=AdkP_WdC6H1Kq_wCwJ-e70M0gWgFfBOqKZ9aqYN-NHen8NeQT_wi_khIbnBN8SXoZZUKVBaq0mmlIJILgXP-ZQUp&_nc_zt=23&_nc_ht=scontent.fslw1-1.fna&_nc_gid=Cin3Aa9SAEqGxbhwYZLAyA&oh=00_Afab_sTtQmotLnUmxPqKpHMSbBTylOEIUsLhailihlg5UA&oe=68CEDEDD" alt="Mi foto" width="200">
+
+    <?php
+    echo "<h3>Un poco de lo que me gusta y hago</h3>";
+    echo "<ul>";
+    echo "<li>Estoy estudiando Desarrollo de Software Multiplataforma</li>";
+    echo "<li>Me gusta montar a caballo</li>";
+    echo "<li>Me encanta hacer postres</li>";
+    echo "<li>Me gusta leer libros de suspenso</li>";
+    echo "</ul>";
+    ?>
+
+    <hr>
+
+    <h3>Deja un comentario</h3>
+    <form action="Comentarios.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="2" cols="40" required></textarea><br>
+
+        <input type="submit" value="Enviar Comentario">
+    </form>
+
+    <hr>
+
+    <footer>
+        <?php echo '<p>Creado por: Carla Vazquez</p>'; ?>
+        <?php echo '<a href="mailto:vazquezcarla159@gmail.com">Contacta conmigo vía Gmail</a>'; ?>
+    </footer>
+
+</body>
+</html>
